@@ -648,6 +648,12 @@ if 'IS_GRADESCOPE_ENV' not in os.environ:
     best_score, best_model, best_original_system, models = find_best_model_factory()
 
 
+# In[33]:
+
+
+# Please do not remove this comment.
+
+
 # In[114]:
 
 
@@ -676,12 +682,6 @@ def examine_model_weights(train_result, k=3, verbose=True):
         print()
 if 'IS_GRADESCOPE_ENV' not in os.environ:        
     examine_model_weights(best_original_system)
-
-
-# In[33]:
-
-
-# Please do not remove this comment.
 
 
 # In[115]:
@@ -714,8 +714,8 @@ def find_new_relation_instances(
         for p, idx in sorted_probs[:k]:
             print('{:10.3f} {}'.format(p, neg_o[rel][idx]))
         print()
-
-find_new_relation_instances(splits, best_original_system, k=10)
+if 'IS_GRADESCOPE_ENV' not in os.environ:
+    find_new_relation_instances(splits, best_original_system, k=10)
 
 
 # ## Bake-off [1 point]
