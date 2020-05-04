@@ -843,15 +843,15 @@ if 'IS_GRADESCOPE_ENV' not in os.environ:
 # 
 # 1. We use Gigaword scaled (1/n) counts matrix with a window of 5.
 # 
-# 2. We use PPMI followed by ttest statistic as a reweighting procedure.
+# 2. We use PPMI followed by ttest statistic as a reweighting procedure. 
 # 
 # 3. Then we use an autoencoder to learn a reduced dimensional representation. We scale the values first because it will help the network learn.
 # 
 # Note: We also experimented with subword modeling but that reduced the performance of our system.
 # 
-# My peak score was: 0.526852
+# My peak score was: 0.528300
 
-# In[49]:
+# In[50]:
 
 
 # This is my code
