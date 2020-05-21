@@ -1,3 +1,3 @@
 # CS224u: Natural Language Understanding
 
-Download data.tgz as per instructions given for the assignment.
+This is a repo with hw solutions for the Spr2020 CS224U class at Stanford
